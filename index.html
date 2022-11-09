@@ -31,6 +31,7 @@
             <source src="assets/audio/wearethepeople.ogg" type="audio/ogg">
         </audio>
     <div class="container">
+        <div class="start-img"></div>
         <div class="nummer-select">
             <ul>
                 <li><p onclick="playSong('clocks');" class="nummer">1.Clocks</p></li>
@@ -43,7 +44,10 @@
     </div>
     <script>  
     function playSong(songId) {       
-    document.getElementById(songId).play();}
+    document.getElementById(songId).play();
+    playSong(songId)
+        document.querySelector(".start-img").src=event.children[0].src
+    }
     </script>
 </body>
 </html>

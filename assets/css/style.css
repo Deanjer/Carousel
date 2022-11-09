@@ -40,3 +40,8 @@ p{
 p:active{
     transform: scale(1.05);
 }
+.start-img {
+    width: 50%;
+    height: 250px;
+    background-color: azure;
+}
